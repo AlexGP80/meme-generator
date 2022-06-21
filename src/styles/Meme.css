@@ -1,0 +1,59 @@
+.meme-form-container {
+    padding: 36px;
+}
+
+.meme-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+
+.meme-form-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.meme-form-inputs > input {
+    border: 1px solid #D5D4D8;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.88rem;
+    color: #0D0D0D;
+}
+
+.upper-text-input {
+    margin-right: 8px;
+}
+
+.bottom-text-input {
+    margin-left: 8px;
+}
+
+.meme-form > button {
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    height: 40px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    border: none;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.1em;
+    
+    color: white;
+}
+
+.meme-image {
+    width: 100%;
+}
