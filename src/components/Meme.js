@@ -5,11 +5,13 @@ import memesData from "../memesData.js"
 
 export default function Meme() {
 
+    const [memeImageUrl, setMemeImageUrl] = React.useState("");
+
     function getMemeImage() {
         const memesArray = memesData.data.memes;
         const index = Math.floor(Math.random() * memesArray.length);
         const url = memesArray[index].url;
-        console.log(url);
+        setMemeImageUrl(url);
     }
 
     return (
@@ -21,7 +23,7 @@ export default function Meme() {
                 </div>
                 <button onClick={getMemeImage}>Get a new meme image 🖼️</button>
             </div>
-            <img src="../images/memeimg.png" alt="Meme" className="meme-image" />
+            <img src={memeImageUrl} alt="" className="meme-image" />
         </div>
     );
 }
