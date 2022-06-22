@@ -27,6 +27,8 @@
     font-size: 0.75rem;
     line-height: 0.88rem;
     color: #0D0D0D;
+    text-indent: 5px;
+
 }
 
 .upper-text-input {
@@ -53,6 +55,12 @@
     
     color: white;
 }
+
+.meme-form > button:hover {
+    background: linear-gradient(90.41deg, #812F9D 1.14%, #b828eA 100%);
+    cursor: pointer;
+}
+
 
 .meme-image {
     width: 100%;
