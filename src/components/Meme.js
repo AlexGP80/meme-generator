@@ -34,9 +34,8 @@ export default function Meme() {
     }, []);
 
     function getMemeImage() {
-        const memesArray = allMemes;
-        const index = Math.floor(Math.random() * memesArray.length);
-        const url = memesArray[index].url;
+        const index = Math.floor(Math.random() * allMemes.length);
+        const url = allMemes[index].url;
         setMeme(prevMeme => ({...prevMeme, randomImage: url}));
     }
 
